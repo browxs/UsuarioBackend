@@ -1,4 +1,5 @@
-﻿using System;
+﻿using APIUsuario.Validations;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace APIUsuario.Models
@@ -14,17 +15,15 @@ namespace APIUsuario.Models
         public string Sobrenome { get; set; }
 
         [Required]
+        [EmailAddress]
         public string Email { get; set; }
 
         [Required]
+        [NaoPermitirDataAtual]
         public DateTime DataNascimento { get; set; }
 
         [Required]
-        public Escolaridade Escolaridade { get; set; }
-    }
-
-    public enum Escolaridade
-    {
-        Infantil, Fundamental, Medio, Superior
+        [Range(0, 3)]
+        public int Escolaridade { get; set; }
     }
 }
