@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200707174609_Inicial.cs" />
+    <Compile Remove="Migrations\20200707174609_Inicial.Designer.cs" />
+    <Compile Remove="Migrations\20200707175518_Inicial.cs" />
+    <Compile Remove="Migrations\20200707175518_Inicial.Designer.cs" />
+    <Compile Remove="Migrations\20200707180037_Inicial.cs" />
+    <Compile Remove="Migrations\20200707180037_Inicial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Controllers\" />
   </ItemGroup>
 
