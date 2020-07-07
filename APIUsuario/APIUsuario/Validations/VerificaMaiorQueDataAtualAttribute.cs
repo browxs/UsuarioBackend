@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace APIUsuario.Validations
 {
-    public class NaoPermitirDataAtualAttribute : ValidationAttribute
+    public class VerificaMaiorQueDataAtualAttribute : ValidationAttribute
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {

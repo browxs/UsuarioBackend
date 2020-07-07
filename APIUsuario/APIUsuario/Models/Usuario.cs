@@ -19,7 +19,7 @@ namespace APIUsuario.Models
         public string Email { get; set; }
 
         [Required]
-        [NaoPermitirDataAtual]
+        [VerificaMaiorQueDataAtual]
         public DateTime DataNascimento { get; set; }
 
         [Required]
