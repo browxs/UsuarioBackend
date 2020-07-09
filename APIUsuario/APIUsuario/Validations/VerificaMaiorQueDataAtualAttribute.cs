@@ -12,9 +12,9 @@ namespace APIUsuario.Validations
                 return ValidationResult.Success;
             }
 
-            var dataNascimento = Convert.ToDateTime(value);
+            var dataNascimento = Convert.ToDateTime(value).Date;
 
-            if (dataNascimento > DateTime.Now)
+            if (dataNascimento > DateTime.Now.Date)
             {
                 return new ValidationResult("A data de nascimento não pode ser maior que a de hoje.");
             }

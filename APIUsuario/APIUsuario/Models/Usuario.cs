@@ -1,6 +1,7 @@
 ﻿using APIUsuario.Validations;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace APIUsuario.Models
 {
@@ -20,6 +21,7 @@ namespace APIUsuario.Models
 
         [Required]
         [VerificaMaiorQueDataAtual]
+        [Column(TypeName = "date")]
         public DateTime DataNascimento { get; set; }
 
         [Required]
